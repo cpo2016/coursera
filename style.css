@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.article h1 {
+    margin: 60px auto;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.card-container {
+    width: 98%;
+    margin:0 auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 16px);  
+    background-color: rgb(224, 224, 227);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(36, 36, 36);
+    position: relative;
+    box-shadow: 2px 2px 2px rgb(73, 73, 73);
+}
+
+.h2-div {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.h2-div h2 {
+    text-align: center;
+    width: 100%;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(36, 36, 36);
+    border-left: 1px solid rgb(36, 36, 36);
+}
+
+p {
+    margin: 50px 20px;
+    padding-top: 15px;
+}
+
+.card-1 {
+    background-color: rgb(215, 121, 121);
+}
+
+.card-2 {
+    background-color: rgb(216, 69, 69);
+}
+
+.card-3 {
+    background-color: rgb(234, 187, 77);
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .article h1 {
+        margin:50px;
+        font-size:2rem;
+    }
+    .card {
+        flex: 1 1 calc(50% - 10px);  
+    }
+
+    .card.sushi {
+        flex: 1 1 100%;  
+    }
+}
+
+@media (max-width: 767px) {
+    .article h1 {
+        margin:30px;
+        font-size:1.5rem;
+    }
+    .card {
+        flex: 1 1 100%;  
+    }
+}
